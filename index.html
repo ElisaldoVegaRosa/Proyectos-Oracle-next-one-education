@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Oracle+AluraLATAM</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor_general">
+            <div class="logo_alura">
+                <img src="./img/logo.svg" alt="Logo de Alura">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor_general">
+            <div class="contenedor_general2">
+                <form class="cont_text_izq">
+                    <div class="text_entrada">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="text_entrada_info">
+                            <div class="mensaje_adv">
+                                <img src="exclamacion.svg" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_entrada_botones">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_salida_area">
+                    <div class="salida_area_content">
+                        <div class="sub_contenedor" id="default">
+                            <div class="text_salida_img">
+                                <img src="muneco.svg" alt="Imagen de animada">
+                            </div><p class="text_mensaje">Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "sub_contenedor invisible" id="result">
+                            <textarea name="salida_area_content" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Elisaldo Vega Rosa /Republica Dominicana 2023</footer>
+</body>
+
+<script src="./js/encriptador.js"></script>
+</html>
