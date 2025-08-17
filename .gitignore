@@ -1,2 +1,5 @@
 README.ipynb
 .ipynb_checkpoints
+# .NET build artifacts
+**/bin/
+**/obj/
